@@ -1,6 +1,6 @@
 ﻿namespace SharpHelper
 {
-    public static class ObjectExtensions
+    public static class ObjectHelper
     {
         public static bool IsNull(this object obj)
         {
