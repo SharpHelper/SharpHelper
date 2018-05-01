@@ -7,7 +7,7 @@ namespace SharpHelper
 {
     public static class JwtHelper
     {
-        public static string GenerateJwtToken(string key, string securityKey, string issuer, string audience)
+        public static string GenerateJwtToken(string key, string securityKey, string issuer, string audience, int duration)
         {
             var symmetricKey = Convert.FromBase64String(securityKey);
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -19,7 +19,7 @@ namespace SharpHelper
                 }),
                 Audience = audience,
                 Issuer = issuer,
-                Expires = DateTime.UtcNow.AddMinutes(1),
+                Expires = DateTime.UtcNow.AddMinutes(duration),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(symmetricKey), SecurityAlgorithms.HmacSha256Signature)
             };
             var stoken = tokenHandler.CreateToken(tokenDescriptor);
