@@ -7,6 +7,12 @@ namespace SharpHelper
 {
     public static class XmlHelper
     {
+        /// <summary>
+        /// Will Convert a xml string to object.
+        /// </summary>
+        /// <typeparam name="T">Type of Json to return</typeparam>
+        /// <param name="xml">xml String</param>
+        /// <returns>The object Deserialized.</returns>
         public static T ToObject<T>(this string xml)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(T));
@@ -17,6 +23,11 @@ namespace SharpHelper
             }
         }
 
+        /// <summary>
+        /// Will convert a object, to xml string.
+        /// </summary>
+        /// <param name="obj">The object to convert.</param>
+        /// <returns>Xml string serialized.</returns>
         public static string ToXml<T>(this object obj) where T : new()
         {
             using (var ms = new MemoryStream())

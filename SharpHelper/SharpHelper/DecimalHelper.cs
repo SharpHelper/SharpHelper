@@ -4,11 +4,23 @@ namespace SharpHelper
 {
     public static class DecimalHelper
     {
+        /// <summary>
+        /// Verify if decimal number has a value
+        /// </summary>
+        /// <param name="value">Decimal number</param>
+        /// <returns>True if decimal number has a value, or false if doesn't.</returns>
         public static bool HasDecimal(this decimal value)
         {
             return (value - Math.Round(value) != 0);
         }
 
+        /// <summary>
+        /// This helper is for pagination.
+        /// Returns the integer of the decimal if there are no decimal places.
+        /// Otherwise, return the integer, incremented 1.
+        /// </summary>
+        /// <param name="value">Decimal number</param>
+        /// <returns>The pagination number.</returns>
         public static int CalculateNumberPage(this decimal value)
         {
             if (value - Math.Round(value) != 0)
@@ -19,6 +31,11 @@ namespace SharpHelper
             return GetIntPart(value);
         }
 
+        /// <summary>
+        /// Will return the integer part, of a decimal value.
+        /// </summary>
+        /// <param name="value">Decimal number</param>
+        /// <returns></returns>
         public static int GetIntPart(this decimal value)
         {
             return (int)Math.Truncate(value);

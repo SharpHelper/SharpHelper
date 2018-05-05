@@ -7,6 +7,11 @@ namespace SharpHelper
 {
     public static class EnumHelper
     {
+        /// <summary>
+        /// Will return the description of a Enum.
+        /// </summary>
+        /// <param name="myEnum">Enumerator</param>
+        /// <returns>The description of a Enum.</returns>
         public static string GetDescription(this Enum myEnum)
         {
             if (myEnum == null)

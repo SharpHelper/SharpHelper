@@ -5,6 +5,11 @@ namespace SharpHelper
 {
     public static class MD5Helper
     {
+        /// <summary>
+        /// Will Encrypt a string to MD5 hash
+        /// </summary>
+        /// <param name="str">string to encrypt</param>
+        /// <returns>The hash of a encrypted string</returns>
         public static string Md5Encypt(this string str)
         {
             string hash;
@@ -12,6 +17,7 @@ namespace SharpHelper
                 hash = GetMd5Hash(md5, str);
             return hash;
         }
+
         static string GetMd5Hash(MD5 md5Hash, string input)
         {
             byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(input));

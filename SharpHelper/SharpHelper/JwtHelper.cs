@@ -7,6 +7,15 @@ namespace SharpHelper
 {
     public static class JwtHelper
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="securityKey"></param>
+        /// <param name="issuer"></param>
+        /// <param name="audience"></param>
+        /// <param name="duration"></param>
+        /// <returns></returns>
         public static string GenerateJwtToken(string key, string securityKey, string issuer, string audience, int duration)
         {
             var symmetricKey = Convert.FromBase64String(securityKey);
