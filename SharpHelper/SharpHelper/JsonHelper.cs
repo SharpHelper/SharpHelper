@@ -10,7 +10,7 @@ namespace SharpHelper
         /// <typeparam name="T">Type of Json to return</typeparam>
         /// <param name="json">Json String</param>
         /// <returns>The object Deserialized.</returns>
-        public static T ToObject<T>(this string json)
+        public static T ToJsonObject<T>(this string json)
         {
             return JsonConvert.DeserializeObject<T>(json);
         }
