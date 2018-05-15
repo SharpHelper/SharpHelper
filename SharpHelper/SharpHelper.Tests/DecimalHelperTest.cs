@@ -35,5 +35,19 @@ namespace SharpHelper.Tests
             decimal value = 10M;
             Assert.AreEqual(10, value.GetIntPart());
         }
+
+        [TestMethod]
+        public void Will_Return_The_Number_Without_Increment()
+        {
+            decimal value = 10M;
+            Assert.AreEqual(10, value.GetIntPart());
+        }
+
+        [TestMethod]
+        public void Will_Return_The_Number_With_Increment()
+        {
+            decimal value = 10.65M;
+            Assert.AreEqual(11, value.CalculateNumberPage());
+        }
     }
 }
