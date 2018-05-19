@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpHelper", "SharpHelper\SharpHelper.csproj", "{48DAB17A-166C-4739-B698-98859FAEC69F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpHelper.Tests", "SharpHelper.Tests\SharpHelper.Tests.csproj", "{E7AC7948-9E60-4034-809B-5302A0863E60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpHelper.Tests", "SharpHelper.Tests\SharpHelper.Tests.csproj", "{E7AC7948-9E60-4034-809B-5302A0863E60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
