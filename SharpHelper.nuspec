@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>SharpHelper</id>
+    <version>1.1.0</version>
+    <authors>otaviolarrosa</authors>
+    <description>A set of useful C# Extension Methods</description>
+    <language>pt-BR</language>
+    <projectUrl>https://github.com/otaviolarrosa/SharpHelper/</projectUrl>
+    <licenseUrl>https://github.com/otaviolarrosa/SharpHelper/</licenseUrl>
+  </metadata>
+  <files>
+    <file src="..\SharpHelper\SharpHelper\SharpHelper\bin\Release\netcoreapp2.0\SharpHelper.dll" target="lib\netcoreapp2.0" />
+  </files>
+</package>
