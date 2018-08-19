@@ -1,5 +1,7 @@
-﻿using System.Security.Cryptography;
+﻿using System;
+using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace SharpHelper
 {
@@ -16,6 +18,17 @@ namespace SharpHelper
             using (MD5 md5 = MD5.Create())
                 hash = GetMd5Hash(md5, str);
             return hash;
+        }
+
+
+        /// <summary>
+        /// Will validate if a string is a valid MD5 hash
+        /// </summary>
+        /// <param name="str">string to validate</param>
+        /// <returns>A boolean, saying if is valid or not</returns>
+        public static bool IsValidMd5(this string str)
+        {
+            return str.IsNullOrEmpty() ? false : Regex.IsMatch(str, "^[0-9a-fA-F]{32}$", RegexOptions.Compiled);
         }
 
         static string GetMd5Hash(MD5 md5Hash, string input)
