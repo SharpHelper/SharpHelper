@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package>
   <metadata>
-    <id>SharpHelper</id>
-    <version>1.1.0</version>
+    <id>SharpHelper.NetFramework</id>
+    <version>1.0.0</version>
     <authors>otaviolarrosa</authors>
-    <description>A set of useful C# Extension Methods</description>
-    <language>pt-BR</language>
+    <description>A set of useful C# Extension Methods(Ported for netframework)</description>
+    <language>en-US</language>
     <projectUrl>https://github.com/otaviolarrosa/SharpHelper/</projectUrl>
     <licenseUrl>https://github.com/otaviolarrosa/SharpHelper/</licenseUrl>
 	<dependencies>
-      <dependency id="Newtonsoft.Json" version="11.0.2" />
-      <dependency id="System.IdentityModel.Tokens.Jwt" version="5.2.2" />
+      <dependency id="Newtonsoft.Json" version="12.0.1" />
     </dependencies>
   </metadata>
   <files>
