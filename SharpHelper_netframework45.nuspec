@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>SharpHelper.NetFramework</id>
-    <version>1.0.0</version>
+    <version>1.0.4</version>
     <authors>otaviolarrosa</authors>
     <description>A set of useful C# Extension Methods(Ported for netframework)</description>
     <language>en-US</language>
@@ -13,6 +13,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\SharpHelper\SharpHelper\SharpHelper\bin\Release\netcoreapp2.0\SharpHelper.dll" target="lib\netcoreapp2.0" />
+    <file src="..\SharpHelper\SharpHelper\SharpHelper_NetFramework45\SharpHelper_NetFramework45\lib\SharpHelper_NetFramework45.dll" target="lib\netframework45"/>
   </files>
 </package>
