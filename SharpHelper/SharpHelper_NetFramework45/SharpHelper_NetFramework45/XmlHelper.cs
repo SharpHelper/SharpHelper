@@ -10,7 +10,7 @@ namespace SharpHelper
         /// <summary>
         /// Will Convert a xml string to object.
         /// </summary>
-        /// <typeparam name="T">Type of Json to return</typeparam>
+        /// <typeparam name="T">Type of XML to return</typeparam>
         /// <param name="xml">xml String</param>
         /// <returns>The object Deserialized.</returns>
         public static T ToXmlObject<T>(this string xml)

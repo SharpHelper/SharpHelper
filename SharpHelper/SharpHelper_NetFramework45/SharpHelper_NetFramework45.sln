@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpHelper_NetFramework45", "SharpHelper_NetFramework45\SharpHelper_NetFramework45.csproj", "{11A127BE-0AAA-4870-B267-494AC8BA8CED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11A127BE-0AAA-4870-B267-494AC8BA8CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A127BE-0AAA-4870-B267-494AC8BA8CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A127BE-0AAA-4870-B267-494AC8BA8CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A127BE-0AAA-4870-B267-494AC8BA8CED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE144AA0-10B4-4CC5-B2F6-50056666973F}
+	EndGlobalSection
+EndGlobal
